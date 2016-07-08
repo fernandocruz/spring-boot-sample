@@ -28,6 +28,7 @@ public class GreetMessageController {
 	
 	@POST
 	@Consumes("application/json")
+	@Produces("application/json")
 	public GreetMessage updateMessage(GreetMessage greetMessage){	
 		return service.setNewGreetMessage(greetMessage);
 	}
